@@ -13,13 +13,48 @@
     />
 
     <title>Frontend Mentor | Ping coming soon page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Libre Franklin", "sans-serif"],
+            },
+            colors: {
+              white: "#fff",
+              "blue-primary": "#4f7df3",
+              "pale-blue": "#c2d3ff",
+              "light-red": "#ff5263",
+              "gray-neutral": "#969696",
+              "very-dark-blue": "#151f29",
+            },
+            fontSize: {
+              xs: "0.8rem",
+              base: "0.9rem",
+              xl: "1.05rem",
+              "2xl": "1.563rem",
+              "3xl": "1.953rem",
+              "4xl": "2.441rem",
+              "5xl": "3.052rem",
+            },
+          },
+        },
+      };
+    </script>
+
     <link href="../dist/output.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Fontawesome icons -->
     <script
       src="https://kit.fontawesome.com/c5c4ba3082.js"
       crossorigin="anonymous"

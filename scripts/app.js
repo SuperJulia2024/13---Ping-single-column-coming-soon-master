@@ -9,8 +9,15 @@ function myValidator() {
 
   errorMsg.style.display = "none";
   emailField.style["border-color"] = "hsl(223, 100%, 88%)";
+  errorMsg.innerHTML = "Please provide a valid email address";
 
-  /* if (emailField.value.trim() === "") { */
+  if (emailField.value.trim() === "") {
+    errorMsg.innerHTML = "Whoops! It looks like you forgot to add your email";
+    errorMsg.style.display = "block";
+    emailField.style["border-color"] = "red";
+    numberOfErrors++;
+  }
+
   if (!reg.test(emailField.value)) {
     console.log("Y aqui");
     errorMsg.style.display = "block";
